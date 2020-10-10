@@ -1,0 +1,24 @@
+body {
+	font-size: 16px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	position: relative;
+}
+
+li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -1.5em;
+	top: .4em;
+	width: 1em;
+	height: 1em;
+	background-repeat: no-repeat;
+	background-size: 1em;
+	background-image: url("images/Virus.svg");
+}
