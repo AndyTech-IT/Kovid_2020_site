@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<title>Kovid</title>
+	<link rel="stylesheet" href="styles.css">							<!-- 0 Подключение стилей из  -->
+	<title>Kovid</title>													<!--  внешнего файла  -->
 </head>
 <body>
 	<!-- Заголовок сайта -->
@@ -17,6 +16,10 @@
 		<ul>
 			<li><a href="#first">Меры предосторожности</a></li>
 			<li><a href="#second">Случаи заболевания</a></li>
+			<li><a href="https://www.who.int/ru/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Перейти на статью ВОЗ</a></li> 
+
+			<!-- 1 Ссылка на внешний сайт + якоря -->
+
 		</ul>
 	</aside>
 
@@ -82,19 +85,19 @@
 		<!-- Блок таблицы -->
 		<div class="table_container">
 			<table 
-					id=second
-					style="text-align: center; margin: auto;" 
+					id=second 
 					rules="rows" 
 					frame="border"
-					cellpadding="10">
-				<style type="text/css">
-					.russia:before {
+					cellpadding="10" 
+					style="text-align: center; margin: auto;">		<!-- 2 задание стилей через атрибут тэга -->
+				<style type="text/css"> 							/* 3 Задание стилей в вёрстке */
+					.russia:before {								/* 4 Псевдо-элемент before */
 						content: "";
-						position: absolute;
-						display: block;
+						position: absolute;							/* 5 Абсолютное позиционирование - */
+						display: block;								/* не влияет на окружающие элементы */
 						width: 1em;
 						height: 1em;
-						background-image: url("images/russia.svg");
+						background-image: url("images/russia.svg"); /* 6 картинка (флаг России в таблице) */
 						background-size: 1em;
 						background-repeat: no-repeat;
 					}
@@ -111,13 +114,6 @@
 					}
 				</style>
 				<caption> <h2>Случаи заболевания</h2> </caption>
-				<colgroup width="100"/>
-				<colgroup span="4">
-					<col width="200">
-					<col width="200">
-					<col width="200">
-					<col width="100">
-				</colgroup>
 				<thead>
 					<th>Местоположение</th> <th>Все случи заболевания</th> <th>Новые случаи (за 10.11.2020)</th> <th>Количество случаев на 1 млн человек</th> <th>Умерло</th>
 				</thead>

@@ -4,14 +4,14 @@ body {
 
 h1 {
 	text-align: center;
-	background: #fff;
+	background: #fff;				/* 1 Задание цвета шестнацетиричной системой */
 }
 
 aside {
-	position: sticky;
-	top: 1em;
-	width: 20%;
-	display: inline-block;
+	width: 15%;
+	min-width: 9em;
+	max-width: 11em;
+	display: inline-block;			/* СМ ниже */
 	vertical-align: top;
 	margin: 3em 1em 0 0;
 	border: outset;
@@ -25,28 +25,28 @@ aside ul {
 }
 
 aside li {
-	list-style: none;
-	margin: 1em 0;
+	list-style: none;					/* 2 Отключение стандартных маркеров списка */
+	margin: .3em 0;
 }
 
 
 .container ul {
 	list-style: none;
-	background: hsl(90 27% 83% / 41%);
+	background: hsl(90 27% 83% / 41%);	/* 3 Задание цвета через hsl */
 	padding: 1em 3em;
 	border-radius: 1em;
 }
 
 .container li {
-	position: relative;
+	position: relative;					/* 4 Относительное позицыонирование */
 }
 
 .container li:before {
 	content: "";
 	display: block;
-	position: absolute;
-	left: -1.5em;
-	top: .4em;
+	position: absolute;					/* 5 Задание абсолютного позиционирования дочернего элемента (относительно родителя) */
+	left: -1.5em;						/* Если не делать шаг 4 то будет относительно body (попробуй удали строку 41)*/
+	top: .4em;							/* Отступ слева -1.5ем отступ сверху 0,4ем */
 	width: 1em;
 	height: 1em;
 	background-repeat: no-repeat;
@@ -63,27 +63,27 @@ p {
 
 
 blockquote {
-	background: wheat;
+	background: wheat;					/* 6 Задание цвета по ключевому слову */
 	padding: 1em;
 	margin: 0;
 	padding-left: 0;
 	border-radius: 1em;
-	font-family: Arial;
+	font-family: Arial;					/* 7 Не стандартный шрифт */
 	font-style: italic;
-	text-shadow: 4px 4px 3px rgba(0, 0, 0, .5);
+	text-shadow: 4px 4px 3px rgba(0, 0, 0, .5);	/* 8 Задание цвета через РГБА */
 	border: outset;
 }
 
 .container {
-	width: 70%;
-	display: inline-block;
-	margin: auto;
-	margin-top: 3em;
+	width: 80%;
+	display: inline-block;				/* 9 Отоброжение строчным блоком */
+	margin-top: 3em;					/* В случае если ширина экрана позволяет */
+	min-width: 36em;					/* блоки отображается бок о бок друг к другу */
 }
 
 .table_container {
-	background: rgb(255 215 215);
-	border-radius: 1em;
+	background: rgb(255 215 215);		/* 10 Задание цвета через РГБ */
+	border-radius: 1em;					/* 11 Ах да забыл скругление угов блоков */
 	padding: 2em;
 }
 
